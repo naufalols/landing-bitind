@@ -9,24 +9,31 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="/asset/fontawesome/css/all.css">
     <link rel="stylesheet" href="/asset/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/asset/animate/animate.min.css">
     <title>Home</title>
 </head>
 
 <body>
     <div class="position-static">
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-transparent">
-            <div class="container">
+            <div class="container p-sm-1">
                 <a class="navbar-brand" href="#">
                     <img src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30"
                         height="24" class="d-inline-block align-text-top">
                 </a>
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav .navbar-nav-scroll  ms-auto mb-2 mb-lg-0">
                         <li class="nav-item m-3">
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item m-3">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item m-3 dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -34,7 +41,7 @@
                                 Blog
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Action</a></li>
                                 <li><a class="dropdown-item" href="#">Another action</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
@@ -43,7 +50,7 @@
                             </ul>
                         </li>
                         <li class="nav-item m-3">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                            <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -52,10 +59,12 @@
     </div>
 
 
-    <div class="p-sm-5 mb-4 bg-light">
+    <div class="p-sm-5 mb-4"
+        style="background-image: url(https://images.unsplash.com/photo-1552152974-19b9caf99137?fit=crop&w=1350&q=80);">
+        <!-- <img src="/asset/img/stefan-stefancik--g7axSVst6Y-unsplash.jpg" class="img-fluid" alt="Responsive image"> -->
         <div class="container-fluid">
             <div class="row justify-content-start">
-                <div class="col-sm-5">
+                <div class="col-sm-12 col-md-9 col-lg-5 mb-5">
                     <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
@@ -67,7 +76,8 @@
                         </div>
                         <div class="carousel-inner">
                             <div class="carousel-item active">
-                                <div style="height: 26rem;" class="card shadow-sm p-4 m-3">
+                                <div style="height: 26rem;"
+                                    class="card shadow-sm p-4 m-3 animate__animated animate__fadeIn">
                                     <div class="card-body">
                                         <h5 class="card-title">Solusi Teknologi</h5>
                                         <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -113,7 +123,7 @@
                 </div>
 
             </div>
-            <!-- <h1 class="display-5 fw-bold">Custom jumbotron</h1>
+            <!-- <h3 class="display-5 fw-bold">Custom jumbotron</h3>
             <p class="col-md-8 fs-4">Using a series of utilities, you can create this jumbotron, just like the one in
                 previous versions of Bootstrap. Check out the examples below for how you can remix and restyle it to
                 your liking.</p>
@@ -122,12 +132,12 @@
     </div>
 
     <div class="text-center m-4">
-        <h1>What we do?</h1>
+        <h3>What we do?</h3>
     </div>
 
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
+        <div class="row row-cols-1 row-cols-md-3 g-4 animate__animated animate__fadeInUp">
+            <div class="col-md animate__animated animate__fadeInUp">
                 <div class="card text-center text-white bg-dark h-100 p-sm-3">
                     <div class="card-body p-sm-4">
                         <i class="fas fa-globe-asia fa-3x mb-3"></i>
@@ -137,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md animate__animated animate__fadeInUp">
                 <div class="card text-center text-white bg-dark h-100 p-sm-3">
                     <div class="card-body p-sm-4">
                         <i class="fas fa-desktop fa-3x mb-3"></i>
@@ -146,7 +156,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-md animate__animated animate__fadeInUp">
                 <div class="card text-center text-white bg-dark h-100 p-sm-3">
                     <div class="card-body p-sm-4">
                         <i class="fas fa-mobile fa-3x mb-3"></i>
@@ -158,13 +168,13 @@
         </div>
     </div>
 
-    <div class="text-center m-4">
-        <h1>Testimoni</h1>
+    <div class="text-center m-5">
+        <h3>Testimoni</h3>
     </div>
 
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-4 g-4">
-            <div class="col">
+    <!-- <div class="container">
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-sm-2 g-4">
+            <div class="col-sm">
                 <div class="card text-center h-100 p-sm-3">
                     <div class="card-body">
                         <i class="fas fa-globe-asia fa-lg mb-3"></i>
@@ -175,7 +185,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <div class="card text-center h-100 p-sm-3">
                     <div class="card-body">
                         <i class="fas fa-desktop fa-lg mb-3"></i>
@@ -184,7 +194,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <div class="card text-center h-100 p-sm-3">
                     <div class="card-body">
                         <i class="fas fa-mobile fa-lg mb-3"></i>
@@ -193,7 +203,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-sm">
                 <div class="card text-center h-100 p-sm-3">
                     <div class="card-body">
                         <i class="fas fa-mobile fa-lg mb-3"></i>
@@ -203,75 +213,334 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+    <!-- Swiper -->
+    <div class="container">
+        <div class="swiper swiper-testimoni homepage-testimoni">
+            <div class="swiper-wrapper mb-5">
+                <div class="swiper-slide">
+                    <div class="card h-100">
+                        <img class="card-img" src="https://source.unsplash.com/300x300/?tech"
+                            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay">
+                            <i class="fas fa-globe-asia fa-lg mb-3"></i>
+                            <h6 class="card-title text-center">Web Development</h6>
+                            <p class="card-text small fs-6">Lorem ipsum dolor, sit amet consectetur
+                                adipisicing elit.
+                                Laboriosam
+                                facere
+                                tempora quisquam ducimus minima eius aliquam autem blanditiis reprehenderit a?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card text-center h-100">
+                        <img class="card-img" src="https://source.unsplash.com/300x300/?tech"
+                            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay">
+                            <i class="fas fa-globe-asia fa-lg mb-3"></i>
+                            <h6 class="card-title">Web Development</h6>
+                            <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Laboriosam
+                                facere
+                                tempora quisquam ducimus minima eius aliquam autem blanditiis reprehenderit a?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card text-center h-100">
+                        <img class="card-img" src="https://source.unsplash.com/300x300/?tech"
+                            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay">
+                            <i class="fas fa-globe-asia fa-lg mb-3"></i>
+                            <h6 class="card-title">Web Development</h6>
+                            <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Laboriosam
+                                facere
+                                tempora quisquam ducimus minima eius aliquam autem blanditiis reprehenderit a?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card text-center h-100">
+                        <img class="card-img" src="https://source.unsplash.com/300x300/?tech"
+                            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay">
+                            <i class="fas fa-globe-asia fa-lg mb-3"></i>
+                            <h6 class="card-title">Web Development</h6>
+                            <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Laboriosam
+                                facere
+                                tempora quisquam ducimus minima eius aliquam autem blanditiis reprehenderit a?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card text-center h-100">
+                        <img class="card-img" src="https://source.unsplash.com/300x300/?tech"
+                            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay">
+                            <i class="fas fa-globe-asia fa-lg mb-3"></i>
+                            <h6 class="card-title">Web Development</h6>
+                            <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Laboriosam
+                                facere
+                                tempora quisquam ducimus minima eius aliquam autem blanditiis reprehenderit a?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="card text-center h-100">
+                        <img class="card-img" src="https://source.unsplash.com/300x300/?tech"
+                            alt="Goverment Lorem Ipsum Sit Amet Consectetur dipisi?">
+                        <div class="card-img-overlay">
+                            <i class="fas fa-globe-asia fa-lg mb-3"></i>
+                            <h6 class="card-title">Web Development</h6>
+                            <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                                Laboriosam
+                                facere
+                                tempora quisquam ducimus minima eius aliquam autem blanditiis reprehenderit a?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
     </div>
 
-    <div class="text-center m-4">
-        <h1>Our Team</h1>
+    <div class="text-center m-5">
+        <h3>Our Team</h3>
     </div>
 
     <div class="container">
-        <div class="row row-cols-1 row-cols-md-4 g-4 mt-4">
-            <div class="col mb-4">
-                <div class="card text-center text-white bg-dark h-100 p-sm-3 position-relative">
-                    <div class="card-body">
-                        <div class="position-absolute top-0 start-50 translate-middle text-primary">
-                            <i class="fas fa-globe-asia fa-4x mb-3"></i>
+        <!-- Swiper -->
+        <div class="container">
+            <div class="swiper cardSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <!-- Single Advisor-->
+                        <div class="col">
+                            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s"
+                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <!-- Team Thumb-->
+                                <div class="advisor_thumb"><img src="/asset/img/profile/reza.jpg" alt="">
+                                    <!-- Social Info-->
+                                    <div class="social-info"><a href="#"><i class="fab fa-facebook-f"></i></a><a
+                                            href="#"><i class="fab fa-twitter"></i></a><a href="#"><i
+                                                class="fab fa-linkedin"></i></a></div>
+                                </div>
+                                <!-- Team Details-->
+                                <div class="single_advisor_details_info">
+                                    <h6>Reza Velayani</h6>
+                                    <p class="designation">Founder &amp; CEO</p>
+                                </div>
+                            </div>
                         </div>
-                        <h6 class="card-title mt-3">Web Development</h6>
-                        <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-                            facere
-                            tempora quisquam ducimus minima eius aliquam autem blanditiis reprehenderit a?</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Single Advisor-->
+                        <div class="col">
+                            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s"
+                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <!-- Team Thumb-->
+                                <div class="advisor_thumb"><img src="/asset/img/profile/reza.jpg" alt="">
+                                    <!-- Social Info-->
+                                    <div class="social-info"><a href="#"><i class="fab fa-facebook-f"></i></a><a
+                                            href="#"><i class="fab fa-twitter"></i></a><a href="#"><i
+                                                class="fab fa-linkedin"></i></a></div>
+                                </div>
+                                <!-- Team Details-->
+                                <div class="single_advisor_details_info">
+                                    <h6>Reza Velayani</h6>
+                                    <p class="designation">Founder &amp; CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Single Advisor-->
+                        <div class="col">
+                            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s"
+                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <!-- Team Thumb-->
+                                <div class="advisor_thumb"><img src="/asset/img/profile/reza.jpg" alt="">
+                                    <!-- Social Info-->
+                                    <div class="social-info"><a href="#"><i class="fab fa-facebook-f"></i></a><a
+                                            href="#"><i class="fab fa-twitter"></i></a><a href="#"><i
+                                                class="fab fa-linkedin"></i></a></div>
+                                </div>
+                                <!-- Team Details-->
+                                <div class="single_advisor_details_info">
+                                    <h6>Reza Velayani</h6>
+                                    <p class="designation">Founder &amp; CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Single Advisor-->
+                        <div class="col">
+                            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s"
+                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <!-- Team Thumb-->
+                                <div class="advisor_thumb"><img src="/asset/img/profile/reza.jpg" alt="">
+                                    <!-- Social Info-->
+                                    <div class="social-info"><a href="#"><i class="fab fa-facebook-f"></i></a><a
+                                            href="#"><i class="fab fa-twitter"></i></a><a href="#"><i
+                                                class="fab fa-linkedin"></i></a></div>
+                                </div>
+                                <!-- Team Details-->
+                                <div class="single_advisor_details_info">
+                                    <h6>Reza Velayani</h6>
+                                    <p class="designation">Founder &amp; CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Single Advisor-->
+                        <div class="col">
+                            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s"
+                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <!-- Team Thumb-->
+                                <div class="advisor_thumb"><img src="/asset/img/profile/reza.jpg" alt="">
+                                    <!-- Social Info-->
+                                    <div class="social-info"><a href="#"><i class="fab fa-facebook-f"></i></a><a
+                                            href="#"><i class="fab fa-twitter"></i></a><a href="#"><i
+                                                class="fab fa-linkedin"></i></a></div>
+                                </div>
+                                <!-- Team Details-->
+                                <div class="single_advisor_details_info">
+                                    <h6>Reza Velayani</h6>
+                                    <p class="designation">Founder &amp; CEO</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <!-- Single Advisor-->
+                        <div class="col">
+                            <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s"
+                                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                                <!-- Team Thumb-->
+                                <div class="advisor_thumb"><img src="/asset/img/profile/reza.jpg" alt="">
+                                    <!-- Social Info-->
+                                    <div class="social-info"><a href="#"><i class="fab fa-facebook-f"></i></a><a
+                                            href="#"><i class="fab fa-twitter"></i></a><a href="#"><i
+                                                class="fab fa-linkedin"></i></a></div>
+                                </div>
+                                <!-- Team Details-->
+                                <div class="single_advisor_details_info">
+                                    <h6>Reza Velayani</h6>
+                                    <p class="designation">Founder &amp; CEO</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <div class="swiper-pagination"></div>
             </div>
-            <div class="col mb-4">
-                <div class="card text-center text-white bg-dark h-100 p-sm-3 position-relative">
-                    <div class="card-body">
-                        <div class="position-absolute top-0 start-50 translate-middle text-primary">
-                            <i class="fas fa-globe-asia fa-4x mb-3"></i>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50 mb-sm-5">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                                <a href="index.html"><img
+                                        src="https://getbootstrap.com/docs/5.0/assets/brand/bootstrap-logo.svg"
+                                        class="img-fluid" alt="logo" width="30" height="24"></a>
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                    incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
                         </div>
-                        <h6 class="card-title mt-3">Web Development</h6>
-                        <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-                            facere
-                            tempora quisquam ducimus minima eius aliquam autem blanditiis reprehenderit a?</p>
                     </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card text-center text-white bg-dark h-100 p-sm-3 position-relative">
-                    <div class="card-body">
-                        <div class="position-absolute top-0 start-50 translate-middle text-primary">
-                            <i class="fas fa-globe-asia fa-4x mb-3"></i>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+                                <li><a href="#">services</a></li>
+                                <li><a href="#">portfolio</a></li>
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Expert Team</a></li>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
                         </div>
-                        <h6 class="card-title mt-3">Web Development</h6>
-                        <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-                            facere
-                            tempora quisquam ducimus minima eius aliquam autem blanditiis reprehenderit a?</p>
                     </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card text-center text-white bg-dark h-100 p-sm-3 position-relative">
-                    <div class="card-body">
-                        <div class="position-absolute top-0 start-50 translate-middle text-primary">
-                            <i class="fas fa-globe-asia fa-4x mb-3"></i>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
                         </div>
-                        <h6 class="card-title mt-3">Web Development</h6>
-                        <p class="card-text fs-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam
-                            facere
-                            tempora quisquam ducimus minima eius aliquam autem blanditiis reprehenderit a?</p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2019, All Right Reserved <a href="">BITIND</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Terms</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
     <script src="https://code.jquery.com/jquery-3.6.0.slim.js"
         integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <!-- <script src="asset/jquery.touchSwipe.min.js"></script> -->
-    <!-- <script src="asset/style.js"></script> -->
+    <script src="asset/style.js"></script>
+
 </body>
 
 </html>
